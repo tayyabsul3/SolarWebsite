@@ -6,10 +6,11 @@ const Hero = () => {
     <div className="relative min-h-screen ">
       <video
         muted
+        autoPlay
         style={{ width: "100vw", height: "100vh", objectFit: "cover" }}
       >
-        <source src="video.mp4" type="video/mp4" />
-        <source src="video.ogg" type="video/ogg" />
+        <source src="./video.mp4" type="video/mp4" />
+        <source src="./video.ogg" type="video/ogg" />
         Your browser does not support the video tag.
       </video>
       <div
