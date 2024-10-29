@@ -40,7 +40,7 @@ const Portfolio = () => {
           <h1 className="p-5 font-semibold w-full border-b-2 border-gray-800 text-center bg-gray-900 lg:text-xl px-3 ">
             OUR BIGGEST INSTALLATION YET
           </h1>
-          <div class="logo-image bg-white ">
+          <div className="logo-image bg-white ">
             <img
               decoding="async"
               src="https://zerocarbon.com.pk/wp-content/uploads/2023/10/header-logo.png"

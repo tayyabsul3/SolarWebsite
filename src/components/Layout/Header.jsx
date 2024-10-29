@@ -73,14 +73,12 @@ const Header = () => {
               >
                 <BiLogoFacebook />
               </a>
-              <a
-                href="#"
-                className="bg-black p-1.5 rounded-full hover:bg-primary text-white"
-              >
+              <a className="bg-black p-1.5 rounded-full hover:bg-primary text-white">
                 <ImLinkedin2 size={13} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/hypersolarsolutions/profilecard/?igsh=MW9sYWE1dmJqOWpjdg=="
+                target="_blank"
                 className="bg-black p-1 rounded-full hover:bg-primary text-white"
               >
                 <FaInstagram />
@@ -97,7 +95,7 @@ const Header = () => {
           to="/"
           className="lg:border-r p-3 px-8 w-36 lg:w-48 overflow-hidden"
         >
-          <img src="./logo2.png" alt="" className="object-cover   scale-150" />
+          <img src="./logo22.png" alt="" className="object-cover   " />
         </Link>
         <button
           onClick={() => {
@@ -109,7 +107,7 @@ const Header = () => {
         </button>
         <div
           className={`modal lg:hidden absolute transition-all duration-500 ${
-            !modileMenu ? "top-40 opacity-0 " : "opacity-100 top-24 "
+            !modileMenu ? "top-40 opacity-0 " : "opacity-100 top-20 "
           } z-10
          bg-white w-full h-[90vh] `}
         >

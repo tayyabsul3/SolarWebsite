@@ -10,21 +10,20 @@ const About = () => {
       <div className="">
         <div className="w-[70%] mx-auto space-y-5 text-sm pt-32 pb-10   font-thin ">
           <p>
-            Hyper Solar Solutions is Pakistan’s first renewable energy solution
-            dedicated to combat climate change through the provision of clean,
-            reliable and resilient energy solutions. We aim to accelerate the
-            transition of the country into a low carbon and energy independent
-            state, with a much greener tomorrow for generations to come. Hyper
-            Solar Solutions is a certified distributer of Canadian Solar with
-            technologically advanced energy solutions. Our product range is
-            customized for residential, industrial, commercial and agricultural
-            use
+            At Hyper Solar Solutions, we are committed to driving Pakistan's
+            transition to renewable energy by delivering clean, reliable, and
+            sustainable solutions to combat climate change. Our vision is to
+            empower the nation towards energy independence and a low-carbon
+            future, paving the way for a brighter, greener tomorrow. As an
+            authorized distributor, we offer innovative and customizable energy
+            products designed to meet the unique needs of residential,
+            commercial, industrial, and agricultural sectors.
           </p>
-          <p>
+          {/* <p>
             Hyper Solar Solutions holds the highest category license, ARE-VI,
             issued by the Alternative Energy Development Board (AEDB). We
             believe in a brighter and cleaner Pakistan.
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="staements font-thin">
@@ -34,8 +33,12 @@ const About = () => {
             <div className="space-y-3">
               <h1 className="font-semibold text-2xl">Vision Statement</h1>
               <p className="text-sm">
-                To lead Pakistan’s transition into a low carbon and energy
-                independent state
+                Hyper Solar Solutions envisions a Pakistan where every home,
+                business and community is powered by affordable and sustainable
+                solar energy. Our vision is to lead the nation towards energy
+                independence, reducing reliance on imported fuels and
+                alleviating the burden of energy costs on the people of
+                Pakistan.
               </p>
             </div>
           </div>
@@ -46,9 +49,13 @@ const About = () => {
             <div className="space-y-3">
               <h1 className="font-semibold text-2xl">Mission Statement</h1>
               <p className="text-sm">
-                Our mission is to make Pakistan a carbon free state by enabling
-                people to produce their own electricity through the provision of
-                sustainable solar solutions
+                Our mission at Hyper Solar Solutions is to make clean energy an
+                everyday reality for communities, businesses, and industries. We
+                are dedicated to improving quality of life by providing
+                cost-effective, renewable energy solutions that reduce
+                dependence on traditional energy sources. By promoting energy
+                equity and sustainability, we are creating a healthier and more
+                prosperous world for present and future generations.
               </p>
             </div>
           </div>

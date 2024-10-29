@@ -1,21 +1,40 @@
-import React, { Suspense } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
+import React, { Suspense, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { Loader2 } from "lucide-react";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import ContactUs from "./components/Contactus/ContactUs";
-import Industrail from "./components/Solutions/Industrail";
-import Residential from "./components/Solutions/Residential";
-import Commercial from "./components/Solutions/Commercial";
-import AgriBased from "./components/Solutions/AgriBased";
-import { Loader2 } from "lucide-react";
+
+// Main components for different routes
+const Home = React.lazy(() => import("./components/Home/Home"));
+const About = React.lazy(() => import("./components/About/About"));
+const Projects = React.lazy(() => import("./components/Projects/Projects"));
+const ContactUs = React.lazy(() => import("./components/Contactus/ContactUs"));
+const Industrail = React.lazy(() =>
+  import("./components/Solutions/Industrail")
+);
+const Residential = React.lazy(() =>
+  import("./components/Solutions/Residential")
+);
+const Commercial = React.lazy(() =>
+  import("./components/Solutions/Commercial")
+);
+const AgriBased = React.lazy(() => import("./components/Solutions/AgriBased"));
 
 function App() {
   return (
     <Router>
-      <Suspense fallback={<Loader2 className="animate-spin" />}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center h-screen">
+            <Loader2 className="animate-spin " size={50} />
+          </div>
+        }
+      >
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

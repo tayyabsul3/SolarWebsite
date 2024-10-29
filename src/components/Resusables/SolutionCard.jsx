@@ -27,9 +27,9 @@ const SolutionCard = ({ link, heading, para }) => {
         <p className="font-thin text-lg tracking-tighter flex-[0.6]">{para}</p>
         <button className="border transition-all duration-500 min-w-[10rem] group-hover:shadow-lg w-fit rounded-lg">
           <p className="border-b-2 group-hover:border-transparent flex-normal gap-2 whitespace-nowrap p-3 w-[80%] mx-auto transition-all border-primary h-full">
-            <div className="text-primary transition-all">
+            <span className="text-primary transition-all">
               <FaArrowCircleRight size={20} />
-            </div>
+            </span>
             <span className="font-semibold">Read More</span>
           </p>
         </button>

@@ -81,6 +81,7 @@ export function CarouselPlugin() {
                   <div className="img flex pt-10 pb-5">
                     {["", "", "", "", ""].map((_, index) => (
                       <img
+                        key={index}
                         src="https://zerocarbon.com.pk/wp-content/themes/solatec/assets/images/star.png"
                         alt=""
                         className="w-10"

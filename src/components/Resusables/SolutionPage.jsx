@@ -35,16 +35,58 @@ const SolutionPage = ({ name, content }) => {
       <Content content={content} name={name} />
       {name.includes("Residential") && (
         <div className="bg-gray-100 flex-col gap-14 font-thin pt-20 p-5 lg:px-20 py-20 lg:py-40 flex justify-center max-md:text-sm items-center text-center">
-          <h1 className="font-bold text-2xl  lg:text-3xl">
-            Residential Packages
-          </h1>
-          <div className="flex flex-col  items-center text-center">
-            <p>Independent of load.</p>
+          <div className="flex flex-col gap-10 lg:px-20">
+            <h1 className="font-semibold text-2xl lg:text-4xl">
+              Net Meetering
+            </h1>
             <p>
-              Ideal for residences with no/low power outages and higher unit
-              cost.
+              Net metering is a policy that enables you to generate electricity
+              through solar energy for your own use, while exporting any surplus
+              power back to the national grid. This allows you to offset the
+              units consumed during off-peak hours, resulting in lower utility
+              bills or even earning credit for the excess energy supplied. In
+              2015, NEPRA introduced net metering regulations, allowing DISCOs
+              across Pakistan to purchase surplus electricity produced by
+              consumers and offset it against their grid consumption. Under
+              these regulations, any national grid customer with a three-phase
+              connection can utilize net metering, with systems ranging from 3kW
+              to 1MW. Net metering offers significant benefits, including
+              enhanced power generation, cost savings, and a solid return on
+              investment in solar energy.
             </p>
-            <p>Online monitoring, control & data-logging using the Zero App.</p>
+          </div>
+          {/* <div className="flex flex-col gap-5">
+            <h1 className="font-bold text-2xl  lg:text-3xl">
+              Residential Packages
+            </h1>
+            <div className="flex flex-col  items-center text-center">
+              <p>Independent of load.</p>
+              <p>
+                Ideal for residences with no/low power outages and higher unit
+                cost.
+              </p>
+              <p>
+                Online monitoring, control & data-logging using the Zero App.
+              </p>
+            </div>
+          </div> */}
+          <div className="flex flex-col gap-10">
+            <h1 className="font-semibold text-2xl lg:text-4xl">
+              How Do We Do Net Meetering at Hyper Solar Solutions:
+            </h1>
+            <div className="flex flex-col  items-center text-center">
+              <p>
+                {" "}
+                We are dedicated to guiding you through every step of the
+                net-metered installation process. It begins with the setup of a
+                compliant solar power system, followed by submitting an
+                application to the relevant electricity provider. After a
+                thorough inspection, the electricity company issues an NOC (No
+                Objection Certificate). Once approved, a formal agreement is
+                signed, and a license is issued, enabling the activation of your
+                net-metered solar system.
+              </p>
+            </div>
           </div>
           <div className="border-4 border-gray-800 rounded-full p-[0.5px]">
             {residentialOption.map((option, index) => (
@@ -69,9 +111,6 @@ const SolutionPage = ({ name, content }) => {
           </div>
           <div>
             <div>
-              <h1 className="font-bold text-2xl  lg:text-4xl mb-5">
-                Net-metering
-              </h1>
               {residentialOption.map((option, index) =>
                 option.checked ? (
                   <div key={index} className="flex flex-col gap-1">
