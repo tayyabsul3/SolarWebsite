@@ -6,161 +6,60 @@ import Actionbtn from "../Resusables/Actionbtn";
 const Projects = () => {
   const navs = [
     "All",
-    "Agri-Based Projects",
-    "Commercial Projects",
-    "Industrial Projects",
+    "Agri-Based Project",
+    "Commercial Project",
+    "Industrial Project",
   ];
 
   const projects = [
     {
-      type: "Industrial Projects",
-      name: "Kohinoor Textile Mills Limited",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
+      name: "Shell Pump",
+      capacity: 90,
+      type: "Commercial Project",
+      address: "onGrid System",
+      location: "near Mandra",
+      link: "/images/shellpump.jpg",
     },
     {
-      type: "Industrial Projects",
-      name: "Hoor Oil Industries",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
+      name: "Khwaja Brothers",
+      capacity: 125,
+      type: "Industrial Project",
+      address: "onGrid System",
+      location: "Yamaha chowk humak",
+      link: "/images/pakcuisine.jpg",
     },
     {
-      type: "Industrial Projects",
-      name: "Packages Convertors Powered by Zero Carbon",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
+      name: "Pakcuisine",
+      capacity: 160,
+      type: "Industrial Project",
+      address: "onGrid System",
+      location: "Rawat industrail state",
+      link: "/images/nawazhardware.jpg",
     },
     {
-      type: "Industrial Projects",
-      name: "Khalid Ice Factory And Cold Storage",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
+      name: "Nawaz Hardware",
+      capacity: 8.5,
+      type: "Residential Project",
+      address: "onGrid System",
+      location: "Asghar Mall",
+      link: "/images/mankiala.jpg",
+    },
+
+    {
+      name: "Graceware",
+      capacity: 60,
+      type: "Industrial Project",
+      address: "onGrid System",
+      location: "Rawat Industrial State S3",
+      link: "./images/khawajaTanveer.jpg",
     },
     {
-      type: "Industrial Projects",
-      name: "Maple Leaf Cement",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Burewala Hospital",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Bahawalpur",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Multan",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Okara",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Jaranwala",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Vehari",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Islamabad",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Capital University",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Agri-Based Projects",
-      name: "Fish Farm Kasur",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Industrial Projects",
-      name: "Hilbro International",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Industrial Projects",
-      name: "Khalid Cold Store",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Roots Millennium",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Muslim Town Lahore",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Ferozepur Road Lahore",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Chenab Club Faisalabad",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Jhang Road",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Faisalabad",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Gagu Mandi",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Nankana SB.",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Burewala",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Lahore",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Sheikhupura",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Abdallian Lahore",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Commercial Projects",
-      name: "Commercial Installation Shalimar Lahore",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
-    },
-    {
-      type: "Agri-Based Projects",
-      name: "Punjab Agri Farms",
-      link: "https://zerocarbon.com.pk/wp-content/uploads/2023/05/Untitled-design-24.png",
+      name: "Grace Plastic",
+      capacity: 60,
+      type: "Industrial",
+      address: "",
+      location: "Mankiala",
+      link: "/images/yamahachowk.jpg",
     },
   ];
 
@@ -205,7 +104,7 @@ const Projects = () => {
         }
       />
       <div className="flex justify-center items-center">
-        <div className="projects pt-20 p-5 md:p-20">
+        <div className="projects pt-20 p-5 md:p-20 max-w-7xl">
           <div className="top flex gap-5 mt-5 justify-center text-center flex-wrap font-semibold">
             {navs.map((nav, index) => (
               <button
@@ -243,12 +142,7 @@ const Projects = () => {
                     isAnimating ? "fade-enter fade-enter-active" : ""
                   }`}
                 >
-                  <ProjectCard
-                    type={project.type}
-                    name={project.name}
-                    link={project.link}
-                    animation={animation}
-                  />
+                  <ProjectCard project={project} animation={animation} />
                 </div>
               ))}
           </div>

@@ -12,7 +12,7 @@ const ContentReq = () => {
       <p>
         To book a free survey, reach out to us at{" "}
         <Link to={""} className="text-primary font-medium px-2 text-lg">
-          9999 9999999
+          03365078878
         </Link>{" "}
         or fill the{" "}
         <Link

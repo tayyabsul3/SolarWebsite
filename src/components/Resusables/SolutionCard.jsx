@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const SolutionCard = ({ link, heading, para }) => {
   const [isHovered, setIsHovered] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <div
       className="group bg-white transition-all cursor-pointer duration-500 text-black rounded-xl overflow-hidden relative"
@@ -25,7 +26,21 @@ const SolutionCard = ({ link, heading, para }) => {
           {heading}
         </h1>
         <p className="font-thin text-lg tracking-tighter flex-[0.6]">{para}</p>
-        <button className="border transition-all duration-500 min-w-[10rem] group-hover:shadow-lg w-fit rounded-lg">
+        <button
+          onClick={() => {
+            heading.toLowerCase().includes("industrial")
+              ? navigate("/industrial")
+              : heading.toLowerCase().includes("commercial")
+              ? navigate("/commercial")
+              : heading.toLowerCase().includes("residential")
+              ? navigate("/residential")
+              : heading.toLowerCase().includes("agri")
+              ? navigate("/agribased")
+              : "";
+            window.scrollTo(0, 0);
+          }}
+          className="border transition-all duration-500 min-w-[10rem] group-hover:shadow-lg w-fit rounded-lg"
+        >
           <p className="border-b-2 group-hover:border-transparent flex-normal gap-2 whitespace-nowrap p-3 w-[80%] mx-auto transition-all border-primary h-full">
             <span className="text-primary transition-all">
               <FaArrowCircleRight size={20} />

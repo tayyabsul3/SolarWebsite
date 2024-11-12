@@ -20,9 +20,16 @@ const Footer = () => {
             If you have any questions or need help, feel free to contact our
             team.
           </p>
-          <h1 className="flex-normal gap-2 w-fit text-primary font-bold hover:text-white transition-all duration-500 cursor-pointer text-2xl">
+          <h1
+            onClick={() => {
+              const phoneNumber = "03365078878";
+
+              window.open(`tel:${phoneNumber}, '_blank'`);
+            }}
+            className="flex-normal gap-2 w-fit text-primary font-bold hover:text-white transition-all duration-500 cursor-pointer text-2xl"
+          >
             <FaPhone />
-            <span>999-999-999</span>
+            <span>03365078878</span>
           </h1>
 
           <div className="locations space-y-5">
@@ -51,34 +58,38 @@ const Footer = () => {
           <h3 className="text-white text-xl  font-semibold">Company</h3>
           <ul className="space-y-4">
             <li className="mb-2">
-              <a href="#" className="hover:text-white">
+              <Link to="/about" className="hover:text-white">
                 About Us
-              </a>
+              </Link>
             </li>
             <li className="mb-2">
-              <a href="#" className="hover:text-white">
+              <Link to="/projects" className="hover:text-white">
                 Projects
-              </a>
+              </Link>
             </li>
-            <li className="mb-2">
-              <a href="#" className="hover:text-white">
-                Blog
-              </a>
-            </li>
+
             <li>
-              <a href="#" className="hover:text-white">
+              <Link to="/contact" className="hover:text-white">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="flex-[0.15] flex flex-col gap-8">
           <h3 className="text-white text-xl  font-semibold">Solutions</h3>
           <ul className="flex flex-col gap-4 tracking-wide">
-            <Link className="">Industrial Solutions</Link>
-            <Link>Commercial Solutions</Link>
-            <Link className="">Residential Solutions</Link>
-            <Link>Agri-Based Solutions</Link>
+            <Link to={"/industrial"} className="hover:text-white">
+              Industrial Solutions
+            </Link>
+            <Link to={"/commercial"} className="hover:text-white">
+              Commercial Solutions
+            </Link>
+            <Link to={"/residential"} className="hover:text-white">
+              Residential Solutions
+            </Link>
+            <Link to={"/agribased"} className="hover:text-white">
+              Agri-Based Solutions
+            </Link>
           </ul>
         </div>
         <div className=" h-fit flex gap-5  flex-[0.4] ">

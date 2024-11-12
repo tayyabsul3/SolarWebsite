@@ -47,7 +47,7 @@ const Solutions = () => {
             link={
               "https://zerocarbon.com.pk/wp-content/uploads/2023/01/iot-post-img-1.webp"
             }
-            heading={"Insdustrial Solar Solutions"}
+            heading={"Industrial Solar Solutions"}
             para={
               "High-Efficiency Inverters, Solar Panels, Power Management Units, and an optional PV-Diesel Solution installation"
             }

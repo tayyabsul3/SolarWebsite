@@ -26,7 +26,7 @@ const About = () => {
           </p> */}
         </div>
       </div>
-      <div className="staements font-thin">
+      <div className="staements font-thin mb-20">
         <div className="bg-gray-50">
           <div className="flex items-center  p-10 py-8 w-[75%] mx-auto gap-20  ">
             <PiCrosshairLight size={120} className="text-primary" />
@@ -61,8 +61,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="messages flex justify-between  common-padding w-[80%] mx-auto mt-10">
-        <div className="left text-sm flex basis-1/2 flex-col gap-10 font-thin">
+      <div className="messages flex justify-between  common-padding w-[80%] mx-auto mb-20  ">
+        <div className="left text-sm flex  flex-col gap-10 font-thin">
           <h1 className="font-bold text-3xl">Chairman's Message</h1>
           <div className="p space-y-5 leading-tight">
             <p>
@@ -85,7 +85,7 @@ const About = () => {
               accelerated pace.”
             </p>
           </div>
-          <div className="reargds space-y-5">
+          {/* <div className="reargds space-y-5">
             <img
               src="https://zerocarbon.com.pk/wp-content/uploads/elementor/thumbs/main-amir-sign-q14gyko1eyelee6vthgcas6ldx0cqmkafmu1b9pqma.webp"
               alt=""
@@ -99,15 +99,15 @@ const About = () => {
                 Chairman Hyper Solar Solutions
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="right flex justify-center items-center">
+        {/* <div className="right flex justify-center items-center">
           <img
             className="rounded-xl shadow-2xl w-[80%] h-fit"
             src="https://zerocarbon.com.pk/wp-content/uploads/elementor/thumbs/chairman-profile-about-baner-q14gscyjsvsgd1lh99qwwrxik639rbm8v4ovc5yqkg.webp"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

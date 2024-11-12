@@ -6,11 +6,11 @@ const Portfolio = () => {
       <div className="left hidden lg:inline-block  space-y-5 pl-5 py-20 flex-[0.7]">
         <h1 className="font-bold text-4xl">The Future is Renewable</h1>
         <div className=" flex-normal pt-40">
-          <img
+          {/* <img
             src="https://zerocarbon.com.pk/wp-content/themes/solatec/assets/images/achievement-map-widget/map-empty.webp"
             alt=""
             className="w-[70%]"
-          />
+          /> */}
         </div>
       </div>
       <div className="right bg-slate-200 lg:py-20 py-10 flex-[0.35] lg:px-10 px-5 lg:pt-28 flex flex-col sm:flex-row gap-10 lg:flex-col">

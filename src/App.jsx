@@ -30,8 +30,8 @@ function App() {
     <Router>
       <Suspense
         fallback={
-          <div className="flex justify-center items-center h-screen">
-            <Loader2 className="animate-spin " size={50} />
+          <div className="h-screen w-full flex justify-center items-center">
+            <span class="loader"></span>
           </div>
         }
       >

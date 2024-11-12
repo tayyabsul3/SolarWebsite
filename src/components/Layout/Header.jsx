@@ -29,12 +29,19 @@ const Header = () => {
         <div className="top hidden lg:flex justify-between items-center gap-10 px-10 p-3 w-full bg-white border-b">
           <div className="flex items-center justify-between lg:flex-1  font-extralight">
             <button className="mail flex-normal gap-1">
-              <IoMail size={18} className="mt-1" />
-              <p>yourmail@gmail.com</p>
+              <IoMail size={18} className="" />
+              <p>hypersolarsolution@gmail.com</p>
             </button>
-            <button className="phone flex-normal gap-1">
+            <button
+              onClick={() => {
+                const phoneNumber = "03365078878";
+
+                window.open(`tel:${phoneNumber}, '_blank'`);
+              }}
+              className="phone flex-normal gap-1"
+            >
               <PiPhoneThin />
-              <p>+92 999 9999999</p>
+              <p>03365078878</p>
             </button>
             <div className="flex-normal gap-1">
               <FaClock />
@@ -56,17 +63,21 @@ const Header = () => {
                   name="search"
                   id="search"
                   placeholder="Type Search Words here"
-                  className="bg-tra w-48 p-1 text-sm italic"
+                  className="bg-tra w-48 p-1 text-sm outline-none italic"
                 />
               </div>
             </form>
             <div className="socials xl:flex items-center  gap-4 hidden">
-              <a
-                href="#"
+              <button
+                onClick={() => {
+                  const number = "03365078878";
+                  const whatsappUrl = `https://wa.me/${number}`;
+                  window.open(whatsappUrl, "_blank");
+                }}
                 className="bg-black p-1 rounded-full hover:bg-primary text-white"
               >
                 <FaWhatsapp />
-              </a>
+              </button>
               <a
                 href="#"
                 className="bg-black p-1 rounded-full hover:bg-primary text-white"
