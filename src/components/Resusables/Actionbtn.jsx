@@ -8,7 +8,8 @@ const Actionbtn = ({ action, fn }) => {
         fn
           ? fn
           : () => {
-              navigate("/contact");
+              // navigate("/contact");
+              alert("comming soon");
             }
       }
       className="flex-normal gap-3 bg-primary p-3 px-5 rounded-md hover:bg-secondary transition-all duration-300 group "

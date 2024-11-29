@@ -71,7 +71,7 @@ const Parteners = () => {
             link={
               "https://zerocarbon.com.pk/wp-content/uploads/2023/02/icon-02-sollar-installation.webp"
             }
-            heading={"Zero App"}
+            heading={"Our App"}
             para={
               "Access, control, and monitor your smart solar energy system from anywhere."
             }
@@ -91,7 +91,7 @@ const Parteners = () => {
             }
             heading={"Certified Engineers"}
             para={
-              "With a team of certified and qualified engineers, Zero Carbon is your smartest solar partner in Pakistan."
+              "With a team of certified and qualified engineers, Hyper Solar is your smartest solar partner in Pakistan."
             }
           />
           <div className="bg-primary w-full cursor-pointer h-full text-white p-10 md:px-8 xl:px-10 space-y-5 rounded-lg relative group">

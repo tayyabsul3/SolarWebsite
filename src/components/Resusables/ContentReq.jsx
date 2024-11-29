@@ -36,11 +36,11 @@ const ContentReq = () => {
         Net-metering.
       </p>
       <h1 className="pb-3 text-bold text-2xl  lg:text-3xl font-bold">
-        Zero App
+        Our App
       </h1>
       <div className="space-y-5">
         <p>
-          Zero App allows you to access, control, and keep an eye on your solar
+          Our App allows you to access, control, and keep an eye on your solar
           system from anywhere in the world
         </p>
         <p>Personal Dashboard</p>

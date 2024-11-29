@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="location">
               <h1 className="font-bold text-gray-300 mb-2">Islamabad Office</h1>
               <p className="">
-                1st Floor, Duniya News, Plot 11, Sector G-7/1, Zero Point,
+                1st Floor, Duniya News, Plot 11, Sector G-7/1, Hyper Point,
                 Islamabad.
               </p>
             </div>

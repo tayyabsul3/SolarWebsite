@@ -16,13 +16,13 @@ const ContactUs = () => {
               III, Lahore, Punjab 54000
               <br />
               Islamabad Office: 1st Floor, Duniya News, Plot 11, Sector G-7/1,
-              Zero Point, Islamabad.
+              Islamabad.
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <h1 className="font-bold text-lg">Our Contact</h1>
             <p>
-              Email: info@zerocarbon.com.pk
+              Email: info@hypersolar.com.pk
               <br />
               Call: +92 311-1111-926
             </p>
